@@ -31,7 +31,7 @@ _UPLOAD_URL = "https://generativelanguage.googleapis.com/upload/v1beta/files"
 _FILES_URL = "https://generativelanguage.googleapis.com/v1beta/files/{name}"
 _GENERATE_URL = "https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent"
 
-_ANALYSIS_MODEL = "gemini-2.0-flash"
+_ANALYSIS_MODEL = "gemini-3.6-flash"
 
 _SUPPORTED_MIME_TYPES = {
     ".mp4": "video/mp4",
