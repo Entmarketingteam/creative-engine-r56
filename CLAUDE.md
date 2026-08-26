@@ -317,6 +317,7 @@ references/           - (R) Reference materials
   docs/               - Documentation & guides
     kie-ai-api.md     - Kie AI API reference
     prompt-best-practices.md - Prompt writing guide
+    preset-library.md - Proven, worked prompt templates by named style (editorial, selfie-cam UGC, ...)
   inputs/             - Product reference images
 tools/                - (T) Python package
   config.py           - API keys, endpoints, constants
