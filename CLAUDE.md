@@ -338,6 +338,10 @@ CLAUDE.md             - Agent instructions (this file)
 
 Before writing any image or video prompts, always consult `references/docs/prompt-best-practices.md` for model-specific guidelines, prompt structure, and content-specific tips.
 
+Before writing a prompt for a register that's been done before (editorial/posed vs. candid/UGC selfie
+style), check `references/docs/preset-library.md` first — it has full worked templates that already
+tested well, not just guidelines. Add a new preset there whenever a prompt earns its keep in review.
+
 ## Important Notes
 
 - Always use `sys.path.insert(0, '.')` before importing `tools` modules when running from the project root
