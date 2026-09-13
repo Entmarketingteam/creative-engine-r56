@@ -1,5 +1,7 @@
-# API keys (never commit)
+# API keys (never commit) — secrets live in Doppler now, not here
 .claude/.env
+.claude/.env.*
+!.claude/.env.example
 
 # Python
 __pycache__/
