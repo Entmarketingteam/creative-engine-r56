@@ -12,21 +12,27 @@ You are a Creative Content Engine. You orchestrate AI image and video generation
 
 ## First-Time Setup
 
+**Secrets come from Doppler — never a local `.env` file.** All keys below (`GOOGLE_API_KEY`,
+`KIE_API_KEY`, `WAVESPEED_API_KEY`, `REPLICATE_API_TOKEN`, `AIRTABLE_API_KEY`, `AIRTABLE_BASE_ID`)
+already live in Doppler project `ent-agency-automation`, config `dev`. See `.claude/.env.example`
+for what each key is for — it's documentation only now, not a template to fill in.
+
 If the user hasn't set up yet, walk them through:
 
 1. Install dependencies:
    ```
    pip install -r .claude/requirements.txt
    ```
-2. Copy `.claude/.env.example` to `.claude/.env` and fill in API keys:
-   - `GOOGLE_API_KEY` - from https://aistudio.google.com/apikey (default provider for images + Veo 3.1)
-   - `KIE_API_KEY` - from https://kie.ai/api-key (for Kling/Sora videos + fallback image gen + file hosting)
-   - `WAVESPEED_API_KEY` (optional) - from https://wavespeed.ai (backup video provider for Kling/Sora)
-   - `AIRTABLE_API_KEY` - Airtable PAT with scopes: `data.records:read`, `data.records:write`, `schema.bases:read`, `schema.bases:write`
-   - `AIRTABLE_BASE_ID` - from the Airtable base URL (`appXXXXXX`)
-3. Create the Airtable table:
+2. `doppler setup` once in this directory (binds it to `ent-agency-automation`/`dev`) if not already done.
+3. **Every script in this repo runs through `doppler run`, no exceptions:**
    ```
-   python .claude/setup_airtable.py
+   doppler run --project ent-agency-automation --config dev -- python3 <script>.py
+   ```
+   `tools/config.py` reads keys via `os.getenv()` straight from the process environment that
+   `doppler run` injects — there is nothing to copy into a file, and nothing to go stale.
+4. Create the Airtable table (only needed for the Airtable-review-hub workflow below):
+   ```
+   doppler run --project ent-agency-automation --config dev -- python3 .claude/setup_airtable.py
    ```
 
 ## Provider System
