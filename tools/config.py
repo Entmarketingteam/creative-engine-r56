@@ -1,16 +1,22 @@
 """
 Configuration loader for Creative Content Engine.
-Loads API keys from .claude/.env and provides centralized constants.
+
+Secrets come from Doppler, never from a local .env file. Every entrypoint in
+this repo must be run as:
+
+    doppler run --project ent-agency-automation --config dev -- python3 <script>.py
+
+Doppler injects KIE_API_KEY, GOOGLE_API_KEY, WAVESPEED_API_KEY,
+REPLICATE_API_TOKEN, AIRTABLE_API_KEY, AIRTABLE_BASE_ID directly into the
+process environment before Python starts — os.getenv() below picks them up
+with no file on disk to go stale or leak. Do not reintroduce python-dotenv or
+a .claude/.env file (see .claude/.env.deprecated for why).
 """
 
 import os
 from pathlib import Path
-from dotenv import load_dotenv
 
-# Load environment variables from .claude/.env
 PROJECT_ROOT = Path(__file__).parent.parent
-ENV_PATH = PROJECT_ROOT / ".claude" / ".env"
-load_dotenv(ENV_PATH)
 
 # --- API Keys ---
 KIE_API_KEY = os.getenv("KIE_API_KEY")
