@@ -67,6 +67,13 @@ This is the primary, confirmed mapping (2026-09-14) — bg and accent always swa
 never borrows another's colors. Formula status note above applies to Blue Raspberry; the other 3 are
 regulatory-locked SKUs.
 
+> **Launch scope (2026-09-14, same day):** first launch is **Unflavored + Tropical only**. Peach
+> Rings and Blue Raspberry are real design directions (all 4 proofed and working) but not in the
+> initial lineup — don't imply either is shipping day-one. Ethan's own words: "we will put more
+> branding guardrails on this stuff soon but right now this is the best we've got" — treat this whole
+> v2 identity as the working-but-not-fully-final system; expect another pass, don't over-invest in
+> polish that assumes this is frozen.
+
 ## Pattern / illustration style — two distinct assets, don't conflate them
 1. **Per-flavor icon squiggle** (single color = that flavor's accent) — a continuous-line hand-drawn
    doodle, shape varies per flavor (abstract / peach / pineapple / berry-cluster), used on that
