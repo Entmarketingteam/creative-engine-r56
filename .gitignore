@@ -11,11 +11,9 @@ __pycache__/
 dist/
 build/
 
-# Generated outputs
-outputs/*.png
-outputs/*.jpg
-outputs/*.mp4
-outputs/*.webm
+# Generated outputs — matches the actual CLAUDE.md convention (creative-output/, not outputs/)
+outputs/**
+creative-output/**
 
 # OS files
 .DS_Store
