@@ -8,13 +8,16 @@
 > `references/inputs/iish/_archive-2026-jul-identity/` — the old version of this doc (8-color
 > checker/burst system) is preserved in git history: `git show 45dfe12^:references/docs/iish-brand-kit.md`.
 >
-> **Open item:** flavor names in the source deck are internally inconsistent (see below) and don't
-> fully match the regulatory-locked SFP formula line (Unflavored / Peach Rings / Tropical — the only
-> three real formulated SKUs, per `iish-launch-resources/strategy/iish-brand-book.md` and the silo
-> rule). Per Ethan 2026-09-14: apply the new visual system to those three real flavors only.
-> **Do not use "Fruit Punch," "Lemon Lime," or "Blue Raspberry"** as shipped flavor names/colors —
-> they appear in the deck but have no formulated product behind them. Flag to Ethan/Emily if the deck
-> author meant something different; don't silently guess.
+> **Update 2026-09-14 (same day, corrected mapping):** Ethan confirmed the pink-bg/dark-red-text
+> pairing on the "Unflavored" card **is** the real packaging/SKU color assignment, and that
+> **Blue Raspberry is now an active 4th flavor in the visual/design system** alongside Unflavored,
+> Peach Rings, and Tropical — the squiggle-pattern language is intentionally built for 4-flavor
+> variety, hand-drawn feel, colors combined/mixed across flavors. **One open item that's separate
+> from design:** the locked Pharmachem SFP formula line is still only Unflavored/Peach Rings/Tropical
+> (`iish-launch-resources/strategy/iish-brand-book.md` CLAUDE.md) — Blue Raspberry doesn't have a
+> regulatory-approved formula yet as of this writing. That's a formulation/compliance question for
+> Emily/Nicki/Pharmachem, not a design blocker — build the visual system for all 4, just don't say
+> Blue Raspberry is "shipping" without checking formula status first.
 
 ## Logo
 Cursive/script lowercase **"iish"** — connected single-stroke ligature, the *s* loops up into the
