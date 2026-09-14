@@ -37,33 +37,48 @@ these as close approximations, not final production hex values.** Get the real e
 
 | Role | Approx. Hex | Where it's used |
 |---|---|---|
-| Anchor (pink) | `#F2C2DA` | Background field behind primary wordmark; **Unflavored** flavor color |
-| Secondary (tan/beige) | `#E4D3C6` | Secondary background field |
-| Mauve/purple | `#9A5A83` | Wordmark-on-tan color; labeled "Fruit Punch" in deck — **not a real flavor, don't ship** |
-| Coral/orange | `#F0765A` | Wordmark-on-blue color; labeled **"Peach Rings"** in the swatch grid — matches the real formulated flavor, use this |
-| Yellow/mustard | `#F3D476` | Swatch grid "Unflavored" light variant |
-| Dark green | `#4A6E58` | Swatch grid labels this "Unflavored" but the flavor-mockup section uses the same green for **"Tropical"** (pineapple icon) — use for **Tropical**, the icon makes the intent clear |
-| Sage/light green | `#AABCB3` | Paired light variant of the dark green |
-| Burgundy/maroon | `#852133` | Labeled "Fruit Punch" dark variant — **not a real flavor** |
-| Light blue | `#ADC7DB` | Wordmark-on-sage color; labeled "Lemon Lime" in grid, "Peach" in flavor mockups — inconsistent naming, **do not use for real Peach Rings** (coral already owns that flavor) — hold this color until Ethan/Emily clarify what it's actually for |
-| Slate blue | `#6E86A0` | Dark variant of the light blue |
+| Anchor (pink) | `#F2C2DA` | **Unflavored** packaging background |
+| Dark red / berry | `#8A2A3D` | **Unflavored** wordmark, text, and squiggle icon (sampled range `#7F1829`–`#9A3F52` depending on element — get the real export) |
+| Light blue / periwinkle | `#ADC7DB` | **Peach Rings** packaging background |
+| Coral/orange | `#F0765A` | **Peach Rings** wordmark, text, and squiggle icon |
+| Dark green | `#456B58` | **Tropical** packaging background |
+| Sage/light green | `#8FA895` | **Tropical** wordmark, text, and squiggle icon |
+| Mauve/mulberry | `#A97696` | **Blue Raspberry** packaging background |
+| Lavender-blue | `#AAA7C1` | **Blue Raspberry** wordmark, text, and squiggle icon |
+| Tan/beige | `#E5D6CE` | Secondary/neutral field — seen paired with mauve wordmark in one deck panel, not tied to a specific flavor card |
+| Mustard/yellow | `#F3D476` | Seen paired with sage bg in one deck panel, not tied to a specific flavor card |
 
-## Flavor → color lock (applying the new system to the REAL 3 flavors only)
+All values pixel-sampled directly from the screenshot with PIL (not eyeballed), but a screenshot is
+still a compressed, color-shifted copy of the real file. **Treat as close approximations, not final
+production hex** — get the real exported swatches (Figma/Adobe) before print, packaging proofs, or a
+style guide PDF. The tan/mauve and sage/yellow pairings appear in the deck's wordmark-colorway test
+panel but don't reconcile with the 4 named flavor cards below — kept here for reference only.
 
-| Real flavor (locked formula) | Color | Line-art icon |
-|---|---|---|
-| **Unflavored** | Pink `#F2C2DA` bg, deep berry/maroon wordmark+text | Abstract continuous-line squiggle (no object), see `flavor-mockups.png` far left |
-| **Peach Rings** | Coral/orange `#F0765A` | Apple/peach-shaped continuous-line squiggle |
-| **Tropical** | Dark green `#4A6E58` bg, sage-green icon | Pineapple-shaped continuous-line squiggle |
+## Flavor → color lock (bg / accent, per the 4 explicitly-labeled packaging cards)
 
-Mauve/burgundy and the two blues are **held** — they belong to flavor names that don't exist yet.
-Don't generate packaging using them until the flavor lineup question is resolved.
+| Flavor | Background | Wordmark / text / icon | Icon shape |
+|---|---|---|---|
+| **Unflavored** | Pink `#F2C2DA` | Dark red/berry `#8A2A3D` | Abstract continuous-line squiggle (no object) |
+| **Peach Rings** | Light blue `#ADC7DB` | Coral `#F0765A` | Peach-shaped continuous-line squiggle |
+| **Tropical** | Dark green `#456B58` | Sage `#8FA895` | Pineapple-shaped continuous-line squiggle |
+| **Blue Raspberry** | Mauve `#A97696` | Lavender-blue `#AAA7C1` | Berry-cluster continuous-line squiggle |
 
-## Pattern / illustration style
-**Continuous single-line squiggly doodle icons**, thin stroke, monochrome (icon color = the
-flavor's accent color, e.g. coral icon on the coral card). Replaces the old geometric
-half-circle-checker / citrus-burst patterns entirely. No more checker/burst backgrounds — the new
-system uses solid color fields + one line-art icon, much more minimal.
+This is the primary, confirmed mapping (2026-09-14) — bg and accent always swap in pairs, one flavor
+never borrows another's colors. Formula status note above applies to Blue Raspberry; the other 3 are
+regulatory-locked SKUs.
+
+## Pattern / illustration style — two distinct assets, don't conflate them
+1. **Per-flavor icon squiggle** (single color = that flavor's accent) — a continuous-line hand-drawn
+   doodle, shape varies per flavor (abstract / peach / pineapple / berry-cluster), used on that
+   flavor's own packaging card. This is the one to reference per-SKU generation.
+2. **Multi-color squiggle tangle** (`wordmark-colorways.png`'s companion crop, sage+coral+slateblue+
+   pink intertwined) — several flavors' squiggles overlaid in one piece of line art. This is a
+   **family/texture asset**, not a single-flavor icon: use it for anything that represents the whole
+   flavor range at once (a "meet the flavors" spread, a collage background, packaging-line group
+   shots) where combining colors reads as intentional variety, not a mistake.
+
+Both replace the old geometric half-circle-checker / citrus-burst patterns entirely — solid color
+field + line-art icon(s), no more busy geometric backgrounds.
 
 ## Typography
 Deck doesn't specify a font name — the flavor-label type (`UNFLAVORED`, `CREATINE + COLLAGEN`) is a
