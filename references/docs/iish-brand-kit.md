@@ -83,7 +83,6 @@ Use `wordmark-black-on-white.png` and the relevant flavor card crop from `flavor
 `image_input` references — this system is flat/graphic, so image-conditioning matters even more
 than the old photoreal-lifestyle prompts did for holding the wordmark shape correct.
 
-## Generation paths (unchanged — see main iish-brand-kit-v1-archived.md for the full provider table)
+## Generation paths (unchanged — this is a visual-identity change, not an infrastructure change)
 Same Doppler-keyed providers as before: Nano Banana Pro (Google/Kie), GPT Image 1.5 (WaveSpeed —
-key currently dead, needs rotation), video via Kling/Veo/Sora. This is a visual-identity change, not
-an infrastructure change.
+key currently dead, needs rotation), video via Kling/Veo/Sora.
