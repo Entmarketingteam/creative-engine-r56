@@ -1,78 +1,89 @@
-# IISH Daily — Brand Kit
+# IISH Daily — Brand Kit (v2, REBRAND — 2026-09-14)
 
-> Sourced from the LOCKED visual identity in `~/Desktop/iish-launch-resources/strategy/iish-brand-book.md` §4
-> (ground truth: `~/Downloads/iish - brand book.pdf`, 13pp + logo/colorway packs, 2026-07-13).
-> This is the "brand kit" a tool like Lovart would hold internally — feed it as reference/context on
-> every IISH generation call so output stays on-brand without re-deriving colors/type/logo each time.
-> Do not invent colors, fonts, or logo treatments outside what's below — if something's not here, it's
-> not locked yet (check §11 Open Locks in the brand book).
+> ⚠️ **SUPERSEDES the 2026-07 identity.** Ethan confirmed 2026-09-14 this rebrand is approved
+> (Nicki/Emily signed off) and fully replaces the old wordmark/palette/patterns — not a parallel
+> exploration. Source: brand deck screenshot, saved in full at
+> `references/inputs/iish/rebrand-2026-09/brand-deck-source.png` (crops of each section alongside it).
+> The old identity's files are archived, not deleted, at
+> `references/inputs/iish/_archive-2026-jul-identity/` — see `iish-brand-kit-v1-archived.md` for
+> what they were, in case anything needs to reference the old system for provenance.
+>
+> **Open item:** flavor names in the source deck are internally inconsistent (see below) and don't
+> fully match the regulatory-locked SFP formula line (Unflavored / Peach Rings / Tropical — the only
+> three real formulated SKUs, per `iish-launch-resources/strategy/iish-brand-book.md` and the silo
+> rule). Per Ethan 2026-09-14: apply the new visual system to those three real flavors only.
+> **Do not use "Fruit Punch," "Lemon Lime," or "Blue Raspberry"** as shipped flavor names/colors —
+> they appear in the deck but have no formulated product behind them. Flag to Ethan/Emily if the deck
+> author meant something different; don't silently guess.
 
 ## Logo
-Lowercase **"iish."** wordmark — playful reversed **s**, double dots over the *ii*, terminal period.
-Never all-caps, never respelled. Wordmark recolors per surface from the palette below.
+Cursive/script lowercase **"iish"** — connected single-stroke ligature, the *s* loops up into the
+ascender of the *h*, two round dots over the *ii*. **No terminal period** in this version (the old
+"iish." had one — confirmed as an intentional change, not an oversight, per 2026-09-14 approval).
 
-Files (in `references/inputs/iish/`):
-- `iish_logo_black.svg` / `.png` — primary, for light grounds
-- `iish_logo_white.svg` / `.png` — for dark grounds
-- `board_logo_colorways.png` — logo recolored across the full palette
-- `board_logo_on_color.png` — logo placed on colored backgrounds (contrast reference)
-- `board_flavor_color_system.png` — the 3-flavor colorway pattern system
+File: `references/inputs/iish/rebrand-2026-09/wordmark-black-on-white.png` (clean isolated crop,
+black on off-white). Full deck also shows the wordmark recolored solid in every palette color
+(see `wordmark-colorways.png`) — always solid one color, never multi-color/gradient.
 
-## Palette (LOCKED — 8 colors)
+## Palette — sampled from the source deck (see caveat below)
 
-| Token | Hex | Pantone | Role |
-|---|---|---|---|
-| Cool Pink | `#F5D5DC` | 698 C | Blush ground — backgrounds, delicate highlights |
-| Berry | `#6B2240` | 7421 C | Anchor — headings, dark UI, primary wordmark |
-| Barbie Pink | `#E03C84` | 812 C | Bold CTA + feature highlights |
-| Tangerine | `#D95F38` | 7416 C | Energetic accents (Peach Rings colorway lead) |
-| Violet-Blue | `#8E9DC8` | 2718 C | Calm accents/backgrounds (Unflavored colorway lead) |
-| Leaf | `#4E6B35` | 7490 C | Earthy nature accents/icons |
-| Rainforest | `#1F5C52` | 7721 C | Deep green anchor (shaker, Tropical colorway) |
-| Chartreuse | `#A8B840` | 381 C | Vivid pop against dark grounds (Tropical lead) |
+Colors below were pixel-sampled directly from the screenshot with PIL, not eyeballed — but a
+screenshot is still a compressed, possibly color-shifted copy of the real design file. **Treat
+these as close approximations, not final production hex values.** Get the real exported swatches
+(Figma/Adobe file) before these go anywhere near print, packaging proofs, or a style guide PDF.
 
-## Flavor colorway system
-- **Peach Rings** → tangerine/peach ring pattern
-- **Unflavored** → violet-blue/pink half-circle checker
-- **Tropical** → green/citrus burst pattern
+| Role | Approx. Hex | Where it's used |
+|---|---|---|
+| Anchor (pink) | `#F2C2DA` | Background field behind primary wordmark; **Unflavored** flavor color |
+| Secondary (tan/beige) | `#E4D3C6` | Secondary background field |
+| Mauve/purple | `#9A5A83` | Wordmark-on-tan color; labeled "Fruit Punch" in deck — **not a real flavor, don't ship** |
+| Coral/orange | `#F0765A` | Wordmark-on-blue color; labeled **"Peach Rings"** in the swatch grid — matches the real formulated flavor, use this |
+| Yellow/mustard | `#F3D476` | Swatch grid "Unflavored" light variant |
+| Dark green | `#4A6E58` | Swatch grid labels this "Unflavored" but the flavor-mockup section uses the same green for **"Tropical"** (pineapple icon) — use for **Tropical**, the icon makes the intent clear |
+| Sage/light green | `#AABCB3` | Paired light variant of the dark green |
+| Burgundy/maroon | `#852133` | Labeled "Fruit Punch" dark variant — **not a real flavor** |
+| Light blue | `#ADC7DB` | Wordmark-on-sage color; labeled "Lemon Lime" in grid, "Peach" in flavor mockups — inconsistent naming, **do not use for real Peach Rings** (coral already owns that flavor) — hold this color until Ethan/Emily clarify what it's actually for |
+| Slate blue | `#6E86A0` | Dark variant of the light blue |
 
-Formats: stand-up gusset bag (scoop) + single-serve stick packs. **No jar** (dropped 2026-08-02).
-Merch: rainforest-green shaker, cool-pink lid.
+## Flavor → color lock (applying the new system to the REAL 3 flavors only)
+
+| Real flavor (locked formula) | Color | Line-art icon |
+|---|---|---|
+| **Unflavored** | Pink `#F2C2DA` bg, deep berry/maroon wordmark+text | Abstract continuous-line squiggle (no object), see `flavor-mockups.png` far left |
+| **Peach Rings** | Coral/orange `#F0765A` | Apple/peach-shaped continuous-line squiggle |
+| **Tropical** | Dark green `#4A6E58` bg, sage-green icon | Pineapple-shaped continuous-line squiggle |
+
+Mauve/burgundy and the two blues are **held** — they belong to flavor names that don't exist yet.
+Don't generate packaging using them until the flavor lineup question is resolved.
+
+## Pattern / illustration style
+**Continuous single-line squiggly doodle icons**, thin stroke, monochrome (icon color = the
+flavor's accent color, e.g. coral icon on the coral card). Replaces the old geometric
+half-circle-checker / citrus-burst patterns entirely. No more checker/burst backgrounds — the new
+system uses solid color fields + one line-art icon, much more minimal.
 
 ## Typography
-- **Real Head Pro** — display/headings, caps
-- **Cormorant Garamond SB** — serif accent + italic taglines ("it's in simple habits")
-- **SF Pro Medium** — body/UI
-
-## Aesthetic
-**Retro-playful joy, not wellness minimalism.** Geometric retro patterns (half-circle checker,
-ring/donut motifs), candy colorways per flavor, color-blocked logo. Fun, warm, confident —
-deliberately breaks from Rhode/Alo muted-luxury.
+Deck doesn't specify a font name — the flavor-label type (`UNFLAVORED`, `CREATINE + COLLAGEN`) is a
+bold, condensed, geometric sans in all caps with wide letter-spacing on the sub-label. **No file/name
+confirmed yet** — get the actual typeface from whoever built the deck (Figma link) before using it
+in production copy; don't guess a system-font substitute without asking.
 
 ## Photography & film direction
-Golden-hour natural light, real kitchens/counters/gym bags, real women 32–48. No lab coats, no
-strobe, no clinical anything. Phone-shot-friendly standards for build-in-public content.
+Not addressed in this deck — carry forward the old brand book's golden-hour/real-kitchen photography
+law (`iish-launch-resources/strategy/iish-brand-book.md` §4) until told otherwise; this rebrand looks
+scoped to logo/palette/pattern/packaging-card system, not photography style.
 
-## Proven prompt (image) — from brand book §5, use `board_flavor_color_system.png` as `image_input`
-> "Editorial lifestyle photo of an iish. collagen + creatine stand-up pouch — retro geometric
-> half-circle pattern in soft pink and periwinkle blue, playful lowercase 'iish.' berry wordmark —
-> on a sun-drenched real kitchen counter with a morning coffee cup and a kid's cereal bowl at the
-> edge of frame. Golden hour light through a window, soft shadows. Joyful, warm, lived-in — candy-
-> colored retro optimism, not luxury, not clinical. Photorealistic, 8k."
+## Prompt pattern for this identity
+> "Flat packaging card for iish [FLAVOR] creatine + collagen — solid [COLOR] background, the
+> cursive lowercase 'iish' wordmark (no period, connected ii-s-h ligature, two dots over the ii) in
+> [WORDMARK COLOR], bold condensed caps label '[FLAVOR NAME]' and 'CREATINE + COLLAGEN' beneath it,
+> one thin continuous-line squiggle icon of [ICON SUBJECT] in the lower portion. Clean, minimal,
+> modern — not retro/geometric. Flat graphic design, not photorealistic lifestyle photography."
+Use `wordmark-black-on-white.png` and the relevant flavor card crop from `flavor-mockups.png` as
+`image_input` references — this system is flat/graphic, so image-conditioning matters even more
+than the old photoreal-lifestyle prompts did for holding the wordmark shape correct.
 
-## Prior working generation (proof this pipeline already works)
-2026-08-30: `ent-marketing:creative` skill generated a real 6-shot photorealistic product carousel
-("Midnight Glow" concept) via **Nano Banana Pro on Replicate**, chaining `image_input` off a first
-hero shot so packaging/wordmark held consistent across all 6 shots. `REPLICATE_API_TOKEN` confirmed
-live in Doppler `ent-agency-automation/dev`. That output was a color-direction *exploration*, not
-these locked colors — regenerate against this file's real palette/assets instead of reusing it.
-
-## Available generation paths (all pre-paid, in Doppler `ent-agency-automation/dev`)
-| Need | Model | Key(s) | Notes |
-|---|---|---|---|
-| Image | Nano Banana Pro | `GOOGLE_API_KEY` (direct, default) or `KIE_API_KEY` / `REPLICATE_API_TOKEN` (fallback) | `tools/image_gen.py`, provider="google"\|"kie" |
-| Image | GPT Image 2 | `OPENAI_API_KEY` direct, or via `KIE_API_KEY` | Not yet wired into `tools/providers/` — add if needed |
-| Video | Seedance 2.x | `KIE_API_KEY` or `WAVESPEED_API_KEY` | `tools/video_gen.py`, provider="kie"\|"wavespeed" |
-| Video | Veo 3.1 | `GOOGLE_API_KEY` | Native audio/dialogue, default per CLAUDE.md |
-| Manual only | Midjourney | none (Discord, no API) | Use for one-off explorations, not the automated pipeline |
-| Compile/layout | Canva | claude.ai MCP connector (already live this session) | Assemble a shareable kit sheet/deck from generated assets |
+## Generation paths (unchanged — see main iish-brand-kit-v1-archived.md for the full provider table)
+Same Doppler-keyed providers as before: Nano Banana Pro (Google/Kie), GPT Image 1.5 (WaveSpeed —
+key currently dead, needs rotation), video via Kling/Veo/Sora. This is a visual-identity change, not
+an infrastructure change.
