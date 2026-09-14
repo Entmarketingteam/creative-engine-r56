@@ -71,8 +71,9 @@ regulatory-locked SKUs.
 1. **Per-flavor icon squiggle** (single color = that flavor's accent) — a continuous-line hand-drawn
    doodle, shape varies per flavor (abstract / peach / pineapple / berry-cluster), used on that
    flavor's own packaging card. This is the one to reference per-SKU generation.
-2. **Multi-color squiggle tangle** (`wordmark-colorways.png`'s companion crop, sage+coral+slateblue+
-   pink intertwined) — several flavors' squiggles overlaid in one piece of line art. This is a
+2. **Multi-color squiggle tangle** (`references/inputs/iish/rebrand-2026-09/squiggle-tangle-multicolor.png`,
+   sage+coral+slateblue+pink intertwined) — several flavors' squiggles overlaid in one piece of line
+   art. This is a
    **family/texture asset**, not a single-flavor icon: use it for anything that represents the whole
    flavor range at once (a "meet the flavors" spread, a collage background, packaging-line group
    shots) where combining colors reads as intentional variety, not a mistake.
