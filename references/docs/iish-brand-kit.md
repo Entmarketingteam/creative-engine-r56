@@ -5,8 +5,8 @@
 > exploration. Source: brand deck screenshot, saved in full at
 > `references/inputs/iish/rebrand-2026-09/brand-deck-source.png` (crops of each section alongside it).
 > The old identity's files are archived, not deleted, at
-> `references/inputs/iish/_archive-2026-jul-identity/` — see `iish-brand-kit-v1-archived.md` for
-> what they were, in case anything needs to reference the old system for provenance.
+> `references/inputs/iish/_archive-2026-jul-identity/` — the old version of this doc (8-color
+> checker/burst system) is preserved in git history: `git show 45dfe12^:references/docs/iish-brand-kit.md`.
 >
 > **Open item:** flavor names in the source deck are internally inconsistent (see below) and don't
 > fully match the regulatory-locked SFP formula line (Unflavored / Peach Rings / Tropical — the only
