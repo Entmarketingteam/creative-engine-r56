@@ -76,6 +76,12 @@ for holding wordmark/packaging fidelity; Kie/WaveSpeed for video if needed later
    at that moment — then later the *entire* Desktop folder lost access session-wide and had to be
    re-granted in System Settings. Possibly the same root cause the whole time. Recheck that
    specific subtree now that access is restored before trusting this note long-term.
-3. Original local logo set includes files literally named "w weiner" (an explicit graphic pun
-   variant) — not yet seen (blocked at the time), may differ from the clean `SP_LOGOS.zip` set
-   used here. Confirm which is meant for which channel before shipping broadly.
+3. **Confirmed 2026-09-17**: the "w weiner" logo set is a completely different, much more
+   explicit mark — bold all-caps "STIFF POUR" block lettering where the "I" in "STIFF" is a
+   literal graphic depiction of a penis. This is NOT a variant of the clean cursive script used
+   on the real retail box and in the finalized guide — it's a separate, more risqué treatment.
+   Given platform ad-policy risk (Meta/TikTok/Shopify all restrict explicit sexual imagery) and
+   that neither the finalized guide nor the actual product packaging uses it, **default to the
+   clean cursive wordmark for all generation** unless Ethan/Emily explicitly ask for the explicit
+   mark for a specific, deliberately edgy placement (e.g. a knowing social post, never paid ads
+   or the storefront).
